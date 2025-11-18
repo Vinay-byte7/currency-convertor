@@ -58,7 +58,7 @@ for (let select of selects) {
 
 selects[0].addEventListener("change", (e) => {
   updateFlag1(e.target);
-  from1 = e.target.value;
+  from = e.target.value;
 });
 const updateFlag1 = (ele) => {
   let curr = ele.value;
@@ -71,7 +71,7 @@ const updateFlag1 = (ele) => {
 
 selects[1].addEventListener("change", (e) => {
   updateFlag2(e.target);
-  to1 = e.target.value;
+  to = e.target.value;
 });
 const updateFlag2 = (ele) => {
   let curr = ele.value;
