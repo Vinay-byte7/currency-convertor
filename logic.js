@@ -8,7 +8,8 @@ let get = document.querySelector(".get");
 let i = document.querySelector("i");
 let button = document.querySelector(".btn");
 
-let url = "https://latest.currency-api.pages.dev/v1/currencies/eur.json";
+let url = "https://cors-anywhere.herokuapp.com/https://latest.currency-api.pages.dev/v1/currencies/eur.json
+";
 let from1 = "USD";
 let to1 = "INR";
 
@@ -76,4 +77,5 @@ const updateFlag2 = (ele) => {
     let curr = ele.value;
     let country = countryList[curr];
     imgto.setAttribute("src", "https://flagsapi.com/"+country+"/flat/64.png")
+
 }
