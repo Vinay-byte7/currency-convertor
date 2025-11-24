@@ -26,9 +26,6 @@ const getdata = async () => {
   let result = input * (toVal / fromVal);
   outputFrom.innerText = input + " " + from;
   outputTo.innerText = String(Math.round(result * 1000) / 1000) + " " + to;
-  i.classList.add("ihide");
-  outputFrom.classList.remove("hide");
-  outputTo.classList.remove("hide");
   get.innerText = "1 " + from + " = " + result / input + to;
   get.classList.remove("hide");
 };
