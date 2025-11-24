@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>currency convertor</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>Currency Convertor</h2>
-        <div class="amount">
-            <p>Enter Amount</p>
-            <input type="number" value="100" id="enter">
+      <h2>Currency Convertor</h2>
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="number" value="100" id="enter" />
+      </div>
+      <div class="currency">
+        <div class="from">
+          <p>From</p>
+          <div class="to">
+            <img src="https://flagsapi.com/US/flat/64.png" id="imgfrom" />
+            <select name="from" id="selectFrom"></select>
+          </div>
+          <div class="fromresult"></div>
         </div>
-        <div class="currency">
-            <div class="from">
-                <p>From</p>
-                <div class="to">
-                    <img src= "https://flagsapi.com/US/flat/64.png" id="imgfrom">
-                    <select name="from" id="selectFrom"></select>
-                </div>
-                <div class="fromresult hide"></div>
-            </div>
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            <div class="from">
-                <p>TO</p>
-                <div class="to">
-                    <img src= "https://flagsapi.com/IN/flat/64.png" id="imgto">
-                    <select name="to" id="selectTo"></select>
-                </div>
-                <div class="toresult hide"></div>
-            </div>
+        <div><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+        <div class="from">
+          <p>TO</p>
+          <div class="to">
+            <img src="https://flagsapi.com/IN/flat/64.png" id="imgto" />
+            <select name="to" id="selectTo"></select>
+          </div>
+          <div class="toresult"></div>
         </div>
-        <div class="get hide"></div>
-        <button class="btn">Get Exchange Rate</button>
+      </div>
+      <div class="get hide"></div>
+      <button class="btn">Get Exchange Rate</button>
     </div>
     <script src="country.js"></script>
     <script src="logic.js"></script>
-</body>
+  </body>
 </html>
