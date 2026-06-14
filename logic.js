@@ -7,6 +7,7 @@ let outputTo = document.querySelector(".toresult");
 let get = document.querySelector(".get");
 let i = document.querySelector("i");
 let button = document.querySelector(".btn");
+console.log("welcome to console...");
 
 let url = "https://open.er-api.com/v6/latest/EUR";
 let from = "USD";
